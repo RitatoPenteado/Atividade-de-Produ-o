@@ -1,0 +1,51 @@
+#include <math.h> //biblioteca que fornece um conjunto de funções matemáticas.
+#include <stdio.h> //biblioteca padrão do C.
+
+int main(void) { // int main void é o lugar de inicio de um programa onde há funções que não retornam nada e que não tem parâmetros.
+
+  printf("RitatoPenteado\n");
+
+  printf("Rita de Cássia Penteado, 202222196, Uni La Salle\n");
+
+  int num1, num2, soma, sub, mult, raiz, pot; //utilizamos int para armazenar valores numéricos inteiros e colocamos o termos que iremos utilizar.
+
+  float div; //float é utilizado para números reais.
+
+  int opcao;
+
+  printf("\nDigite o número da operação desejada:\n1.[+] 2.[-] \n3.[÷] 4.[x] "
+         "\n5.[√] 6.[^]\n"); //texto que irá aparecer na tela.
+
+  scanf("%d", &opcao); //comando que realizará a leitura da escolha que o usuário fará.
+
+  printf("Digite um número\n");
+
+  scanf("%d", &num1);
+
+  if (opcao != 5){ //se a opção for diferente de 5 aparece o texto a seguir.
+    printf("Digite o outro número\n");
+    scanf("%d", &num2);
+  }
+
+  soma = num1 + num2; //todas as operações.
+  sub = num1 - num2;
+  mult = num1 * num2;
+  div = num1 / num2;
+  raiz = sqrt(num1);
+  pot = pow(num1, num2);
+
+  if (opcao == 1) {//se a opção do usuário for 1 irá realizar soma e mostrar o resultado.
+    printf("soma = %i", soma);
+  } else if (opcao == 2) {//se a opção do usúario for 2 irá realizar uma subtração e mostrar o resultado, basicamente isso segue por seguinte com as outras operações.
+    printf("subtração = %i", sub);
+  } else if (opcao == 3) {
+    printf("divisão = %.2f", div);
+  } else if (opcao == 4) {
+    printf("multiplicação = %i", mult);
+  } else if (opcao == 5) {
+    printf("raiz = %d", raiz);
+  } else if (opcao == 6) {
+    printf("potência = %d", pot);
+  }
+  return 0; //retorna para 0, finalizando o programa.
+}
