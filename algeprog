@@ -1,9 +1,8 @@
+//RitatoPenteado
 #include <math.h> //biblioteca que fornece um conjunto de funções matemáticas.
 #include <stdio.h> //biblioteca padrão do C.
 
 int main(void) { // int main void é o lugar de inicio de um programa onde há funções que não retornam nada e que não tem parâmetros.
-
-  printf("RitatoPenteado\n");
 
   printf("Rita de Cássia Penteado, 202222196, Uni La Salle\n");
 
@@ -47,5 +46,5 @@ int main(void) { // int main void é o lugar de inicio de um programa onde há f
   } else if (opcao == 6) {
     printf("potência = %d", pot);
   }
-  return 0; //retorna para 0, finalizando o programa.
+  return 0; 
 }
